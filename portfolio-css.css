@@ -1,0 +1,565 @@
+@import "compass/css3";
+
+body {
+	background-color: #C4DFE6;
+}
+
+/*****************************************
+TOP NAVIGATION
+THIS INCLUDES THE ONE THAT SLIDES DOWN AS WELL.
+*****************************************/
+
+#nav {
+	width: 100%;
+	height: 5vh;
+	background: rgba(0,23,27,0.7);
+	position: fixed;
+	z-index: 1;
+}
+
+#logo {
+	height: 5vh;
+	width: auto;
+	float: left;
+	padding-left: 5px;
+}
+
+#nav span {
+	line-height: 7vh;
+	font-family: 'Arima Madurai', sans-serif;
+	color: #fdfdfd;
+	font-weight: 100;
+	font-size: 2.5em;
+}
+
+#realNav {
+	left: 6%;
+	z-index: 3;
+	position: fixed;
+	top: -7vh;
+	-webkit-animation:;
+    animation:;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+#realNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#realNav ul li {
+	float: left;
+	text-align: center;
+	width: 18%;
+	height: 7vh;
+	line-height: 7vh;
+
+	font-family: 'Arima Madurai', sans-serif;
+	color: #fdfdfd;
+	font-weight: 100;
+	font-size: 3vmin;
+	background: #003b46;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+#linesContainer {
+	float: right;
+	top: 50%;
+	cursor: pointer;
+	height: 7vh;
+	width: 7vh;
+}
+#linesContainer img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#xButton {
+	float: left;
+	text-align: center;
+	width: 10%;
+	height: 7vh;
+	line-height: 7vh;
+
+	font-family: 'Arima Madurai', sans-serif;
+	color: #fdfdfd;
+	font-weight: 100;
+	font-size: 4vmin;
+	background: #003b46;
+}
+
+
+@-webkit-keyframes displayNav {
+	from {top: -7vh;}
+	to {top: 0vh;}
+}
+
+@keyframes displayNav {
+	from {top: -7vh;}
+	to {top: 0vh;}
+}
+
+@-webkit-keyframes hideNav {
+	from {top: 0vh;}
+	to {top: -7vh;}
+}
+
+@keyframes hideNav {
+	from {top: 0vh;}
+	to {top: -7vh;}
+}
+
+
+#textLogo {
+	font-family: 'Arima Madurai', sans-serif;
+	color: #fdfdfd;
+	font-weight: 100;
+	font-size: 2.5em;
+	line-height: 7vh;
+	display: inline-block;
+}
+
+#logo img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/*****************************************
+HOME PAGE TOP AREA IN THE MIDDLE
+THIS INCLUDES THE BACKGROUND, IMAGE, AND NAME/TITLE
+*****************************************/
+
+#intro {
+	background: url('img/introbg.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 90vh;
+}
+
+#circleBg {
+	height: 35vw;
+	width: 35vw;
+	border-radius: 35vw;
+	max-width: 280px;
+	max-height: 280px;
+	background-color: rgba(255,255,255,0.6);
+	margin: 0 auto;
+	position: absolute;
+	top: 38%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+}
+
+#circleImage {
+	height: 30vw;
+	width: 30vw;
+	border-radius: 30vw;
+	max-width: 250px;
+	max-height: 250px;
+	background: url('img/aman2.jpg') no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+}
+
+#nameTitle {
+	width: 80vw;
+	height: auto;
+	padding: 2vw 0 2vw 0;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	text-align: center;
+}
+
+#nameTitle h1 {
+	font-family: 'Arima Madurai', sans-serif;
+	font-size: 3em;
+	color: #fdfdfd;
+	text-shadow: 0px 0px 2px #000;
+}
+
+#nameTitle h2 {
+	font-family: 'Arima Madurai', sans-serif;
+	font-size: 1.5em;
+	color: #fdfdfd;
+	text-shadow: 0px 0px 2px #000;
+	font-weight: 100;
+	padding: 5px 0 5px 0;
+}
+
+.wrapperAddition {
+		background-color: #003b46;
+	padding: 20px 0 20px 0;
+}
+
+/*****************************************
+WRAPPERS BASED ON PERCENTAGE
+*****************************************/
+.wrapper100 {
+	height: auto;
+	width: 100%;
+	clear: both;
+}
+
+.wrapper80 {
+	width: 80%;
+	margin: 0 auto;
+}
+.wrapper90 {
+	width: 90%;
+	margin: 0 auto;
+}
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	width: 80vw;
+	margin: 0 auto;
+}
+
+/*****************************************
+COLUMNS FOR THE 3 STATEMENTS
+*****************************************/
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+.col h1 {
+	font-family: 'Arima Madurai', sans-serif;
+	font-size: 3.5vmin;
+	color: #fdfdfd;
+	font-weight: 100;
+}
+
+.col h2 {
+	font-family: 'Arima Madurai', sans-serif;
+	font-size: 4.75vmin;
+	color: #fdfdfd;
+	font-weight: 500;
+	padding: 12px 0 12px 0;
+}
+
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+
+/*****************************************
+CONTENT FOR THE PORTFOLIO.
+THIS INCLUDES EVERYTHING UNDER "PROJECTS"
+*****************************************/
+.realContent h1 {
+	clear: both;
+	padding: 30px 0 0 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 4vmin;
+	margin: 0 0 10px 5vw;
+	color: rgba(21,21,21,0.70);
+}
+
+.realContent h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 3vmin;
+	color: rgba(21,21,21,0.80);
+	padding: 20px 0 0 40px;
+}
+
+.realContent h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.5vmin;
+	color: rgba(21,21,21,0.8);
+	padding: 10px 0 0 40px;
+}
+
+#skillsUsed ul {
+	margin: 0 0 0 65px;
+	font-family: 'Roboto', sans-serif;
+	color: rgba(21,21,21,0.70);
+	font-size: 2vmin;
+	list-style: circle;
+}
+#skillsUsed ul li {
+	margin: 6px 0 0 0;
+}
+
+#projectDesc {
+	width: 50%;
+	float: left;
+	height: inherit;
+	padding: 40px 30px 40px 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2vmin;
+	color: rgba(21,21,21,0.70);
+	line-height: 2.7vmin;
+}
+#projectDesc p {
+	padding-top: 10px;
+}
+
+/*TYPES OF PROJECTS*/
+.subSection {
+	width: 100%;
+	padding: 10px 0 20px 0;
+}
+
+.programming { background-color: #e6c558; }
+.softwareEng { background-color: #f8d668; }
+.contactme { background-color: #ffdf70; height: 93vh;}
+
+/*EACH PROJECT*/
+.projectItem {
+	width: 100%;
+	height: 40vh;
+	margin: 0 0 5vh 0;
+	background-color: rgba(248,248,248,0.70);
+}
+#imageHolder {
+	overflow: hidden;
+	border-radius: 0px 12vh 12vh 0px;
+	height: inherit;
+	width: 25%;
+	float: left;
+}
+.projectItem img {
+	height: inherit;
+	width: auto;
+}
+#skillsUsed {
+	width: 25%;
+	float: left;
+	height: inherit;
+}
+
+#btn {
+	cursor: pointer;
+}
+
+
+/*****************************************
+WORK EXPERIENCE STUFF
+*****************************************/
+
+#expContainer {
+	min-height: 125px;
+	width: 100%;
+	margin-top: 10px;
+	background: #f8f8f8;
+
+	color: #f8f8f8;
+	font-size: 2vmin;
+	font-family: 'Helvetica', sans-serif;
+	padding: 0px 0 30px 0;
+}
+
+#expHeader {
+	width: 100%;
+	background-color: #003b46;
+	height: 35px;
+	line-height: 35px;
+	margin: 0 0 30px 0;
+}
+
+#expHeader span {
+	background-color: #2c5c67;
+	color: #f8f8f8;
+	font-size: 2vmin;
+	line-height: 35px;
+	float: left;
+	font-family: 'Helvetica', sans-serif;
+	padding: 0 10px 0 10px;
+	margin-right: 20px;
+}
+
+#expHeader h2 {
+	background-color: #2c5c67;
+	color: #f8f8f8;
+	font-size: 2vmin;
+	line-height: 34px;
+	float: right;
+	font-family: 'Helvetica', sans-serif;
+	padding: 0 10px 0 10px;
+
+}
+
+#expContainer p {
+	padding: 5px 20px 5px 20px;
+	color: #3e3e3e;
+	line-height: 24px;
+}
+
+.list {
+	padding: 5px 20px 5px 20px;
+	color: #3e3e3e;
+	line-height: 24px;
+
+}
+
+#experience {
+	height: 100vh;
+}
+
+/*****************************************
+CONTACt FORM
+*****************************************/
+#contactContainer {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#contactForm {
+	position: absolute;
+	width: 50vw;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.formField {
+	width: 100%;
+	min-height: 40px;
+	margin: 0 0 5px 0;
+	border-radius: 1vmin;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2vmin;
+}
+
+.formButton {
+	margin: 0 auto;
+	min-width: 10vw;
+	font-family: 'Roboto', sans-serif;
+	font-size: 5vmin;
+}
+
+.contact_msg {
+	width: 100%;
+	min-height: 40px;
+	border-radius: 1vmin;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2vmin;
+}
+
+.company_logo {
+	opacity: 0.6;
+	margin: 0 2% 0 2%;
+	width: 5vw;
+	height: auto;
+
+	 -webkit-transition: opacity 250ms;
+    transition: opacity 250ms;
+    cursor: pointer;
+}
+
+.company_logo:hover {
+	opacity: 0.8;
+}
+
+#companies {
+	text-align: center;
+	margin: 2vh 0 0 0;
+	padding: 1vmin;
+}
+
+/*****************************************
+MEDIA QUERIES
+*****************************************/
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 500px) {
+	.col {  margin: 3% 0% 3% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+	#textLogo {
+		font-size: 7vmin;
+	}
+	#nav span {
+		font-size: 7vmin;
+	}
+
+		.realContent h1 {
+		font-size: 4vmin;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#nav span {
+		font-size: 6vmin;
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) { 
+	#nameTitle h1 {
+		font-size: 5em;
+	}
+
+	#nameTitle h2 {
+		font-size: 3em;
+	}  
+	#intro {
+		height: 85vh;
+	}
+	#circleBg {
+		height: 50vw;
+		width: 50vw;
+		border-radius: 50vw;
+		max-width: 350px;
+		max-height: 350px;
+	}
+	#circleImage {
+		height: 40vw;
+		width: 40vw;
+		border-radius: 40vw;
+		max-width: 320px;
+		max-height: 320px;
+	}
+}
+
+@media all and (max-width: 800px) {
+	.wrapper80 {
+  		width: 100%;
+  		padding: 0 10% 0 10%;
+  	}
+
+	.wrapper90 {
+  		width: 100%;
+	}
+
+	#realNav {
+		width: 100%;
+  		left: 0;
+	}
+}
+
+@media all and (max-width: 600px) {
+
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
