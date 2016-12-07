@@ -8,7 +8,7 @@
 
 		<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 
-		<title><?php echo get_bloginfo( 'name' ); ?></title>
+		<title><?php echo get_bloginfo( 'name' ); ?> <?php echo get_bloginfo( 'description' ); ?></title>
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/reset.css">
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/portfolio-css.css">
 

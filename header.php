@@ -31,7 +31,7 @@
 				</div>
 
 				<div id="nameTitle">
-					<h1>Name Of Page</h1>
+					<h1><?php echo get_the_title(); ?></h1>
 				</div>
 			</section>
 
