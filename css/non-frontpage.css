@@ -26,24 +26,23 @@ THIS INCLUDES THE BACKGROUND, IMAGE, AND NAME/TITLE
 	/*left: 10%;*/
 	/*transform: translate(-50%, 0);*/
 	text-align: center;
-	font-size: 2.5vw;
 }
 
 #nameTitle h1 {
 	font-family: 'Arima Madurai', sans-serif;
-	font-size: 8vmin;
+	font-size: 4vmin;
 	color: #fdfdfd;
-	text-shadow: 0px 0px 2px #000;
+	text-shadow: 0px 0px 3px #000;
 }
 
-#nameTitle h2 {
+/*#nameTitle h2 {
 	font-family: 'Arima Madurai', sans-serif;
 	font-size: 1.5em;
 	color: #fdfdfd;
 	text-shadow: 0px 0px 2px #000;
 	font-weight: 100;
 	padding: 5px 0 5px 0;
-}
+}*/
 
 .wrapperAddition {
 		background-color: #003b46;

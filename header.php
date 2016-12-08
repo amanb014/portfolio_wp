@@ -33,7 +33,7 @@
 				</div>
 
 				<div id="nameTitle">
-					<h1><?php echo wp_title();?>
+					<h1><?php wp_title();?>
 					</h1>
 				</div>
 			</section>
