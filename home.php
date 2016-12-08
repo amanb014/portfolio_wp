@@ -8,6 +8,6 @@
 		
 		} // end while
 	} // end if
-	?>
+?>
 	
 <?php get_footer(); ?>
