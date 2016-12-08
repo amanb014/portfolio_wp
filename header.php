@@ -14,7 +14,7 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Arima+Madurai:100,300,500" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
-
+		<?php wp_head();?>
 	</head>
 	<body>
 		<header>
@@ -31,7 +31,8 @@
 				</div>
 
 				<div id="nameTitle">
-					<h1><?php echo get_the_title(); ?></h1>
+					<h1><?php echo wp_title();?>
+					</h1>
 				</div>
 			</section>
 
