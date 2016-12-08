@@ -1,3 +1,3 @@
-<?php get_header("home"); ?>
+<?php get_header("index"); ?>
 	
 <?php get_footer(); ?>

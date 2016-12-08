@@ -1,0 +1,171 @@
+/*****************************************
+HOME PAGE TOP AREA IN THE MIDDLE
+THIS INCLUDES THE BACKGROUND, IMAGE, AND NAME/TITLE
+*****************************************/
+
+#intro {
+	background: url('../img/introbg.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 90vh;
+}
+
+#circleBg {
+	height: 35vw;
+	width: 35vw;
+	border-radius: 35vw;
+	max-width: 280px;
+	max-height: 280px;
+	background-color: rgba(255,255,255,0.6);
+	margin: 0 auto;
+	position: absolute;
+	top: 38%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+}
+
+#circleImage {
+	height: 30vw;
+	width: 30vw;
+	border-radius: 30vw;
+	max-width: 250px;
+	max-height: 250px;
+	background: url('../img/aman2.jpg') no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+}
+
+#nameTitle {
+	width: 80vw;
+	height: auto;
+	padding: 2vw 0 2vw 0;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	text-align: center;
+}
+
+#nameTitle h1 {
+	font-family: 'Arima Madurai', sans-serif;
+	font-size: 3em;
+	color: #fdfdfd;
+	text-shadow: 0px 0px 2px #000;
+}
+
+#nameTitle h2 {
+	font-family: 'Arima Madurai', sans-serif;
+	font-size: 1.5em;
+	color: #fdfdfd;
+	text-shadow: 0px 0px 2px #000;
+	font-weight: 100;
+	padding: 5px 0 5px 0;
+}
+
+/*****************************************
+COLUMNS FOR THE 3 STATEMENTS
+*****************************************/
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+.col h1 {
+	font-family: 'Arima Madurai', sans-serif;
+	font-size: 3.5vmin;
+	color: #fdfdfd;
+	font-weight: 100;
+}
+
+.col h2 {
+	font-family: 'Arima Madurai', sans-serif;
+	font-size: 4.75vmin;
+	color: #fdfdfd;
+	font-weight: 500;
+	padding: 12px 0 12px 0;
+}
+
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+/*****************************************
+BLOG PAGE
+*****************************************/
+#blog-post {
+	
+}
+
+
+/*****************************************
+MEDIA QUERIES
+*****************************************/
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 500px) {
+	.col {  margin: 3% 0% 3% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+	#textLogo {
+		font-size: 7vmin;
+	}
+	#nav span {
+		font-size: 7vmin;
+	}
+
+		.realContent h1 {
+		font-size: 4vmin;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#nav span {
+		font-size: 6vmin;
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) { 
+	#nameTitle h1 {
+		font-size: 5em;
+	}
+
+	#nameTitle h2 {
+		font-size: 3em;
+	}  
+	#intro {
+		height: 85vh;
+	}
+	#circleBg {
+		height: 50vw;
+		width: 50vw;
+		border-radius: 50vw;
+		max-width: 350px;
+		max-height: 350px;
+	}
+	#circleImage {
+		height: 40vw;
+		width: 40vw;
+		border-radius: 40vw;
+		max-width: 320px;
+		max-height: 320px;
+	}
+}
