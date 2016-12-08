@@ -14,6 +14,7 @@ THIS INCLUDES THE BACKGROUND, IMAGE, AND NAME/TITLE
 	padding-bottom: 5vh;
 	height: auto;
 	position: relative;
+	max-height: 250px;
 }
 
 #nameTitle {
@@ -30,7 +31,7 @@ THIS INCLUDES THE BACKGROUND, IMAGE, AND NAME/TITLE
 
 #nameTitle h1 {
 	font-family: 'Arima Madurai', sans-serif;
-	font-size: 3em;
+	font-size: 8vmin;
 	color: #fdfdfd;
 	text-shadow: 0px 0px 2px #000;
 }
@@ -50,35 +51,10 @@ THIS INCLUDES THE BACKGROUND, IMAGE, AND NAME/TITLE
 }
 
 /*****************************************
-WRAPPERS BASED ON PERCENTAGE
-*****************************************/
-.wrapper100 {
-	height: auto;
-	width: 100%;
-	clear: both;
-}
-
-.wrapper80 {
-	width: 80%;
-	margin: 0 auto;
-}
-.wrapper90 {
-	width: 90%;
-	margin: 0 auto;
-}
-/*  SECTIONS  */
-.section {
-	clear: both;
-	padding: 0px;
-	width: 80vw;
-	margin: 0 auto;
-}
-
-/*****************************************
 BLOG PAGE (home.php)
 *****************************************/
 .blog-post {
-	padding: 2% 2% 2% 2%;
+	padding: 4% 7% 4% 7%;
 	background: #F4F7F7;
 	border-radius: 2vmin;
 	margin: 2% 0 2% 0;
@@ -88,12 +64,27 @@ BLOG PAGE (home.php)
 	box-shadow: 1px 0px 10px rgba(0, 0, 0, .3);
 }
 
+.blog-post-text {
+	font-size: 12pt;
+	font-family: 'Helvetica', sans-serif;
+	margin-top: 15px;
+}
+
 .blog-post-title {
 	font-family: 'Arima Madurai', sans-serif;
 	font-weight: 800;
-	font-size: 18pt;
+	font-size: 3.2vmin;
 	width: 100%;
 	text-align: center;
+	margin: 0;
+}
+
+.blog-post-meta {
+	width: 100%;
+	text-align: right;
+	margin-top: 2%;
+	font-family: 'Arima Madurai', sans-serif;
+	font-size: 11pt;
 }
 
 

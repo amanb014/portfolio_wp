@@ -10,8 +10,8 @@
 
 		<title><?php echo get_bloginfo( 'name' ); ?> <?php echo get_bloginfo( 'description' ); ?></title>
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/reset.css">
-		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/css/common-to-all.css">
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/css/frontpage.css">
+		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/css/common-to-all.css">
 
 		<link href="https://fonts.googleapis.com/css?family=Arima+Madurai:100,300,500" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
