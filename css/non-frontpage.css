@@ -75,63 +75,37 @@ WRAPPERS BASED ON PERCENTAGE
 }
 
 /*****************************************
+BLOG PAGE (home.php)
+*****************************************/
+.blog-post {
+	padding: 2% 2% 2% 2%;
+	background: #F4F7F7;
+	border-radius: 2vmin;
+	margin: 2% 0 2% 0;
+}
+
+.blog-post:hover {
+	box-shadow: 1px 0px 10px rgba(0, 0, 0, .3);
+}
+
+.blog-post-title {
+	font-family: 'Arima Madurai', sans-serif;
+	font-weight: 800;
+	font-size: 18pt;
+	width: 100%;
+	text-align: center;
+}
+
+
+/*****************************************
 MEDIA QUERIES
 *****************************************/
 
-/*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 500px) {
-	.col {  margin: 3% 0% 3% 0%; }
-	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
-	#textLogo {
-		font-size: 7vmin;
-	}
-	#nav span {
-		font-size: 7vmin;
+@media all and (max-width: 800px) {
+
+	.blog-post {
+		border-radius: 0;
+		width: 100%;
 	}
 
-		.realContent h1 {
-		font-size: 4vmin;
-	}
-}
-
-@media only screen and (max-width: 800px) {
-	#nav span {
-		font-size: 6vmin;
-	}
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) { 
-	#nameTitle h1 {
-		/*font-size: 5em;*/
-	}
-
-	#nameTitle h2 {
-		font-size: 3em;
-	}  
-	#intro {
-		/*height: 85vh;*/
-	}
-/*	#circleBg {
-		height: 50vw;
-		width: 50vw;
-		border-radius: 50vw;
-		max-width: 350px;
-		max-height: 350px;
-	}
-	#circleImage {
-		height: 40vw;
-		width: 40vw;
-		border-radius: 40vw;
-		max-width: 320px;
-		max-height: 320px;
-	}*/
-}
-
-
-
-@media all and (max-width: 600px) {
-
-  .navigation li:last-of-type a {
-    border-bottom: none;
-  }
 }
