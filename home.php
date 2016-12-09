@@ -12,12 +12,15 @@
 			} // end while
 		} // end if
 	?>
-</div>
 
-<?php the_posts_pagination( array(
-    'mid_size'  => 2,
-    'prev_text' => __( '<< Previous', 'textdomain' ),
-    'next_text' => __( 'Next >>', 'textdomain' ),
-) ); ?>
+	<?php the_posts_pagination( 
+		array(
+		    'type' => 'list',
+		    'prev_text' => '<< Previous',
+		    'next_text' => 'Next >>'
+			) 
+		); 
+	?>
+</div>
 	
 <?php get_footer(); ?>
