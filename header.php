@@ -25,6 +25,17 @@
 			<section id="nav">
 				<div class="wrapper90">
 					<div id="logo"><img src="<?php bloginfo('template_directory');?>/img/logo.png"\></div>
+
+					<div id="navigation">
+						<?php 
+							wp_nav_menu( 
+								array( 
+									'theme_location' => 'header-menu',
+									'menu_class'     => 'primary-menu'
+									) 
+							); 
+						?>
+					</div>
 				</div>
 			</section>
 
