@@ -109,13 +109,6 @@ COLUMNS FOR THE 3 STATEMENTS
 .span_2_of_3 { width: 66.13%; }
 .span_1_of_3 { width: 32.26%; }
 
-/*****************************************
-BLOG PAGE
-*****************************************/
-#blog-post {
-	
-}
-
 
 /*****************************************
 MEDIA QUERIES
@@ -125,22 +118,6 @@ MEDIA QUERIES
 @media only screen and (max-width: 500px) {
 	.col {  margin: 3% 0% 3% 0%; }
 	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
-	#textLogo {
-		font-size: 7vmin;
-	}
-	#nav span {
-		font-size: 7vmin;
-	}
-
-		.realContent h1 {
-		font-size: 4vmin;
-	}
-}
-
-@media only screen and (max-width: 800px) {
-	#nav span {
-		font-size: 6vmin;
-	}
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) { 
