@@ -8,13 +8,14 @@
 
 		<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 
-		<title><?php echo get_bloginfo( 'name' ); ?> <?php echo get_bloginfo( 'description' ); ?></title>
-		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/reset.css">
-		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/css/common-to-all.css">
+		<title><?php echo get_bloginfo( 'name' ); ?>, <?php echo get_bloginfo( 'description' ); ?></title>
+		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/css/reset.css">
+		<link href="<?php bloginfo('template_directory');?>/css/common-to-all.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/css/frontpage.css">
 
 		<link href="https://fonts.googleapis.com/css?family=Arima+Madurai:100,300,500" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Teko:300" rel="stylesheet">
 
 	</head>
 	<body>
@@ -23,6 +24,17 @@
 			<section id="nav">
 				<div class="wrapper90">
 					<div id="logo"><img src="<?php bloginfo('template_directory');?>/img/logo.png"\></div>
+					
+					<div id="navigation">
+						<?php 
+							wp_nav_menu( 
+								array( 
+									'theme_location' => 'header-menu',
+									'menu_class'     => 'primary-menu'
+									) 
+							); 
+						?>
+					</div>
 				</div>
 			</section>
 
