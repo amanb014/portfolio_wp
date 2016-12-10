@@ -9,9 +9,10 @@
 		<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 
 		<title><?php echo get_bloginfo( 'name' ); ?></title>
+		
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/css/reset.css">
-		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/css/common-to-all.css">
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/css/non-frontpage.css">
+		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/css/common-to-all.css">
 
 		<link href="https://fonts.googleapis.com/css?family=Arima+Madurai:100,300,500" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
@@ -45,7 +46,7 @@
 				</div>
 
 				<div id="nameTitle">
-					<h1><?php echo wp_title();?>
+					<h1><?php wp_title();?>
 					</h1>
 				</div>
 			</section>

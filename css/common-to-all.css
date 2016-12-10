@@ -76,6 +76,10 @@ WRAPPERS BASED ON PERCENTAGE
 	padding: 20px 0 20px 0;
 }
 
+.max800 {
+	max-width: 800px;
+}
+
 /*****************************************
 NAVIGATION MENU
 *****************************************/
@@ -102,7 +106,6 @@ MEDIA QUERIES
 @media all and (max-width: 800px) {
 	.wrapper80 {
   		width: 100%;
-  		padding: 0 10% 0 10%;
   	}
 
 	.wrapper90 {
