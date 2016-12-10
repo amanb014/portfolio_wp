@@ -16,9 +16,7 @@ TOP NAVIGATION
 }
 
 #logo {
-	min-height: 4vh;
-	overflow-y: auto;
-	width: auto;
+	height: 4vw;
 	float: left;
 	padding-left: 5px;
 }
@@ -99,6 +97,55 @@ NAVIGATION MENU
 	
 }
 
+
+/*****************************************
+FOOTER CSS
+*****************************************/
+
+footer {
+	min-height: 25vh;
+	background-color: #003b46;
+	/*width: 100%;*/
+}
+
+.footer_container {
+  padding: 0;
+  margin: 0;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
+.footer_item {
+	color: white;
+	align-self: center;
+	padding: 25px 0 25px 20px;
+}
+
+.footer_item h1 {
+	font-family: 'Teko', sans-serif;
+	font-weight: 300;
+	font-size: 2rem;
+}
+
+.footer-menu {
+	margin-top: 5px;
+}
+
+.footer-menu li a {
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 300;
+	font-size: 1.8vmin;
+	line-height: 2.3vmin;
+	color: #e3e3e3;
+}
 /*****************************************
 MEDIA QUERIES
 *****************************************/
@@ -112,13 +159,21 @@ MEDIA QUERIES
   		width: 100%;
 	}
 
-	#nav {
+	#nav, #logo {
 		height: 5vw;
+	}
+
+	.footer-menu li a {
+		font-size: 2vmin;
 	}
 }
 
 @media all and (max-width: 500px) {
-	#nav {
+	#nav, #logo {
 		height: 6vw;
 	}
+	.footer-menu li a {
+		font-size: 2.2vmin;
+	}
+
 }
