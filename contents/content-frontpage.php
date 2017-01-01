@@ -3,6 +3,4 @@
   <div class="entry-content">
     <?php the_content(); ?>
   </div><!-- .entry-content -->
-
-  THIS SHOULD SHOW UP AFTER.
 </article><!-- #post -->

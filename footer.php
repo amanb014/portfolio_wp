@@ -18,8 +18,15 @@
 			<div class="footer_item">
 
 				<h1>GET SOCIAL!</h1>
+				<?php
+					wp_nav_menu( 
+						array( 
+							'theme_location' => 'footer-mid',
+							'menu_class'     => 'footer-menu'
+							) 
+					); 
+				?>
 				
-
 			</div>
 
 			<div class="footer_item">

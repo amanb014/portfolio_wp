@@ -157,30 +157,15 @@ CONTENT IN THE POST/PAGE
 }
 
 .wrap {
-	width: 95%;
+	width: 100%;
 	margin: 10px auto;
-}
-
-.entry-content { 
-	max-width: 850px;
-	margin: 0 auto;
-	background-color: #fff;
-	padding: 14px 3% 14px 3%;
-	border-radius: 2vmin;
-}
-
-.entry-content p {
-	font-family: 'Helvetica', sans-serif;
-	line-height: 2.2vmin;
-	margin-top: 10px;
-
 }
 
 .emphasize {
 	text-transform: uppercase;
 	font-family: 'Arima Madurai', sans-serif;
 	font-weight: bold;
-	font-size: 14pt;
+	font-size: 16pt;
 }
 
 
