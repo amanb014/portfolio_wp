@@ -19,6 +19,7 @@
 
 	</head>
 	<body>
+	<div id="main-wrap">
 		<header>
 
 			<section id="nav">

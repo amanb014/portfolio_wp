@@ -21,6 +21,7 @@
 		<?php wp_head();?>
 	</head>
 	<body>
+	<div id="main-wrap">
 		<header>
 
 			<section id="nav">

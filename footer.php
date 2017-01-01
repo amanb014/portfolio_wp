@@ -1,5 +1,5 @@
 
-	<footer>
+	<footer class="site-footer">
 		<div class="wrapper90 footer_container">
 			<div class="footer_item">
 				<h1>Stuff</h1>
@@ -41,5 +41,6 @@
 	</footer>
 
 	<?php wp_footer(); ?> 
+	</div>
 	</body>
 </html>

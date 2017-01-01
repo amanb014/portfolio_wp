@@ -102,10 +102,11 @@ NAVIGATION MENU
 FOOTER CSS
 *****************************************/
 
-footer {
+.site-footer {
 	min-height: 25vh;
 	background-color: #003b46;
-	/*width: 100%;*/
+	bottom: 0;
+	width: 100%;
 }
 
 .footer_container {
@@ -146,6 +147,11 @@ footer {
 	line-height: 2.3vmin;
 	color: #e3e3e3;
 }
+
+.entry-header {
+	display: none; !important
+}
+
 /*****************************************
 MEDIA QUERIES
 *****************************************/
@@ -175,5 +181,4 @@ MEDIA QUERIES
 	.footer-menu li a {
 		font-size: 2.2vmin;
 	}
-
 }
