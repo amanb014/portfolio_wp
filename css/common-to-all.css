@@ -103,51 +103,38 @@ FOOTER CSS
 *****************************************/
 
 .site-footer {
-	min-height: 25vh;
+	min-height: 15vh;
 	background-color: #003b46;
 	bottom: 0;
 	width: 100%;
 }
 
-.footer_container {
-  padding: 0;
-  margin: 0;
-  
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
+.footer-flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+
+	padding: 25px 0 10px 0;
 }
 
-
-.footer_item {
-	color: white;
-	align-self: center;
-	padding: 25px 0 25px 20px;
+.footer-flex-item {
+	flex-grow: 0;
+	flex-basis: auto;
+	margin: 10px 13px 10px 13px;
 }
 
-.footer_item h1 {
-	font-family: 'Teko', sans-serif;
-	font-weight: 300;
-	font-size: 2rem;
+.footer-flex-item img {
+	width: 5vmax;
+	max-width: 65px;
+	opacity: 0.7;
 }
 
-.footer-menu {
-	margin-top: 5px;
+.footer-flex-item img:hover {
+	opacity: 0.85;
 }
-
-.footer-menu li a {
-	font-family: 'Helvetica', sans-serif;
-	font-weight: 300;
-	font-size: 1.8vmin;
-	line-height: 2.3vmin;
-	color: #e3e3e3;
-}
-
 /*****************************************
 CONTENT IN THE POST/PAGE
 *****************************************/

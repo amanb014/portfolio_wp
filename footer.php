@@ -1,50 +1,45 @@
 
 	<footer class="site-footer">
 		<div class="wrapper90 footer_container">
-			<div class="footer_item">
-				<h1><?php echo get_option('footer_left'); ?></h1>
 
-				<?php 
-					wp_nav_menu( 
-						array( 
-							'theme_location' => 'footer-left',
-							'menu_class'     => 'footer-menu'
-							) 
-					); 
-				?>
-			</div>
+			<div class="footer-flex-container">
 
-
-			<div class="footer_item">
-
-				<h1><?php echo get_option('footer_middle'); ?></h1>
 				<?php
-					wp_nav_menu( 
-						array( 
-							'theme_location' => 'footer-mid',
-							'menu_class'     => 'footer-menu'
-							) 
-					); 
-				?>
-				
-			</div>
+					$echo_me = "";
 
-			<div class="footer_item">
-				<h1><?php echo get_option('footer_right'); ?></h1>
+					$facebook_url = get_option('facebook_url');
+					$linkedin_url = get_option('linkedin_url');
+					$twitter_url = get_option('twitter_url');
+					$github_url = get_option('github_url');
+					$instagram_url = get_option('instagram_url');
+					$youtube_url = get_option('youtube_url');
 
-				<?php 
-					wp_nav_menu( 
-						array( 
-							'theme_location' => 'footer-right',
-							'menu_class'     => 'footer-menu'
-							) 
-					); 
+					if($facebook_url != "") {
+						$echo_me .= '<div class="footer-flex-item"><a target="_blank" href="' . $facebook_url . '"><img src="' . get_template_directory_uri() . '/img/social/facebook.png' . '" \></a></div>';
+					}
+					if($linkedin_url != "") {
+						$echo_me .= '<div class="footer-flex-item"><a target="_blank" href="' . $linkedin_url . '"><img src="' . get_template_directory_uri() . '/img/social/linkedin.png' . '" \></a></div>';
+					}
+					if($twitter_url != "") {
+						$echo_me .= '<div class="footer-flex-item"><a target="_blank" href="' . $twitter_url . '"><img src="' . get_template_directory_uri() . '/img/social/twitter.png' . '" \></a></div>';
+					}
+					if($github_url != "") {
+						$echo_me .= '<div class="footer-flex-item"><a target="_blank" href="' . $github_url . '"><img src="' . get_template_directory_uri() . '/img/social/github.png' . '" \></a></div>';
+					}
+					if($instagram_url != "") {
+						$echo_me .= '<div class="footer-flex-item"><a target="_blank" href="' . $instagram_url . '"><img src="' . get_template_directory_uri() . '/img/social/instagram.png' . '" \></a></div>';
+					}
+					if($youtube_url != "") {
+						$echo_me .= '<div class="footer-flex-item"><a target="_blank" href="' . $youtube_url . '"><img src="' . get_template_directory_uri() . '/img/social/youtube.png' . '" \></a></div>';
+					}
+
+
+
+					echo $echo_me;
 				?>
 			</div>
 
 		</div>
-
-
 	</footer>
 
 	<?php wp_footer(); ?> 

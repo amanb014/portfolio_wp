@@ -1,5 +1,4 @@
 <h1>Portfolio Theme Options</h1>
-
 <form method="post" action="options.php">
         <?php 
             settings_fields( 'aman_settings_group' ); 
@@ -7,5 +6,3 @@
             submit_button();
         ?>
 </form>
-
-</div>
