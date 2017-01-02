@@ -109,6 +109,23 @@ COLUMNS FOR THE 3 STATEMENTS
 .span_2_of_3 { width: 66.13%; }
 .span_1_of_3 { width: 32.26%; }
 
+/*****************************************
+CONTENT
+*****************************************/
+
+.entry-content { 
+	width: 100%;
+	margin: 0 auto;
+}
+
+.entry-content p {
+	margin: 0 auto;
+	max-width: 850px;
+	font-family: 'Helvetica', sans-serif;
+	line-height: 1.8vmax;
+	padding: 12px 3% 12px 3%;
+}
+
 
 /*****************************************
 MEDIA QUERIES

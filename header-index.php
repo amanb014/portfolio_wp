@@ -19,6 +19,7 @@
 
 	</head>
 	<body>
+	<div id="main-wrap">
 		<header>
 
 			<section id="nav">
@@ -55,19 +56,19 @@
 		<section class="wrapper100 wrapperAddition"> 
 			<div class="section group">
 				<div class="col span_1_of_3">
-					<h1>currently</h1>
-					<h2>ATTAINING</h2>
-					<h1>master's degree in software engineering.</h1>
+					<h1><?php echo get_option('left_line_one'); ?></h1>
+					<h2><?php echo get_option('left_line_two'); ?></h2>
+					<h1><?php echo get_option('left_line_three'); ?></h1>
 				</div>
 				<div class="col span_1_of_3">
-					<h1>currently</h1>
-					<h2>SEEKING</h2>
-					<h1>a full-time position starting Summer 2017.</h1>
+					<h1><?php echo get_option('mid_line_one'); ?></h1>
+					<h2><?php echo get_option('mid_line_two'); ?></h2>
+					<h1><?php echo get_option('mid_line_three'); ?></h1>
 				</div>
 				<div class="col span_1_of_3">
-					<h1>currently</h1>
-					<h2>EXPECTED</h2>
-					<h1>to graduate in December 2017.</h1>
+					<h1><?php echo get_option('right_line_one'); ?></h1>
+					<h2><?php echo get_option('right_line_two'); ?></h2>
+					<h1><?php echo get_option('right_line_three'); ?></h1>
 				</div>
 			</div>
 		</section>

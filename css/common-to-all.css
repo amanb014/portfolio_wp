@@ -102,50 +102,60 @@ NAVIGATION MENU
 FOOTER CSS
 *****************************************/
 
-footer {
-	min-height: 25vh;
+.site-footer {
+	min-height: 15vh;
 	background-color: #003b46;
-	/*width: 100%;*/
+	bottom: 0;
+	width: 100%;
 }
 
-.footer_container {
-  padding: 0;
-  margin: 0;
-  
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
+.footer-flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+
+	padding: 25px 0 10px 0;
+}
+
+.footer-flex-item {
+	flex-grow: 0;
+	flex-basis: auto;
+	margin: 10px 13px 10px 13px;
+}
+
+.footer-flex-item img {
+	width: 5vmax;
+	max-width: 65px;
+	opacity: 0.7;
+}
+
+.footer-flex-item img:hover {
+	opacity: 0.85;
+}
+/*****************************************
+CONTENT IN THE POST/PAGE
+*****************************************/
+
+.entry-header {
+	display: none; !important
+}
+
+.wrap {
+	width: 100%;
+	margin: 10px auto;
+}
+
+.emphasize {
+	text-transform: uppercase;
+	font-family: 'Arima Madurai', sans-serif;
+	font-weight: bold;
+	font-size: 16pt;
 }
 
 
-.footer_item {
-	color: white;
-	align-self: center;
-	padding: 25px 0 25px 20px;
-}
-
-.footer_item h1 {
-	font-family: 'Teko', sans-serif;
-	font-weight: 300;
-	font-size: 2rem;
-}
-
-.footer-menu {
-	margin-top: 5px;
-}
-
-.footer-menu li a {
-	font-family: 'Helvetica', sans-serif;
-	font-weight: 300;
-	font-size: 1.8vmin;
-	line-height: 2.3vmin;
-	color: #e3e3e3;
-}
 /*****************************************
 MEDIA QUERIES
 *****************************************/
@@ -175,5 +185,4 @@ MEDIA QUERIES
 	.footer-menu li a {
 		font-size: 2.2vmin;
 	}
-
 }
