@@ -1,7 +1,6 @@
 
 	<footer class="site-footer">
 		<div class="wrapper90 footer_container">
-<<<<<<< HEAD
 			<div class="footer_item">
 			</div>
 
@@ -9,7 +8,6 @@
 			</div>
 
 			<div class="footer_item">
-=======
 
 			<div class="footer-flex-container">
 
@@ -46,7 +44,6 @@
 
 					echo $echo_me;
 				?>
->>>>>>> master
 			</div>
 
 		</div>
