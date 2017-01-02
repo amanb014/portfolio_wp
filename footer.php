@@ -2,7 +2,7 @@
 	<footer class="site-footer">
 		<div class="wrapper90 footer_container">
 			<div class="footer_item">
-				<h1>Stuff</h1>
+				<h1><?php echo get_option('footer_left'); ?></h1>
 
 				<?php 
 					wp_nav_menu( 
@@ -17,7 +17,7 @@
 
 			<div class="footer_item">
 
-				<h1>GET SOCIAL!</h1>
+				<h1><?php echo get_option('footer_middle'); ?></h1>
 				<?php
 					wp_nav_menu( 
 						array( 
@@ -30,7 +30,7 @@
 			</div>
 
 			<div class="footer_item">
-				<h1>Another stuff</h1>
+				<h1><?php echo get_option('footer_right'); ?></h1>
 
 				<?php 
 					wp_nav_menu( 
