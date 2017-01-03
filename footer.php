@@ -39,13 +39,20 @@
 					if($youtube_url != "") {
 						$echo_me .= '<div class="footer-flex-item"><a target="_blank" href="' . $youtube_url . '"><img src="' . get_template_directory_uri() . '/img/social/youtube.png' . '" \></a></div>';
 					}
-
-
-
 					echo $echo_me;
 				?>
 			</div>
 
+		</div>
+
+		<div id="copyright_info">
+			<?php 
+				$userInput = esc_attr(get_option('copyright_info'));
+				$year = date("Y");
+
+				echo 'Copyright © ' . $year . ' ' . $userInput;
+
+			?>
 		</div>
 	</footer>
 
