@@ -30,3 +30,4 @@ function social_create_page() {
 
 require get_template_directory() . '/inc/function-general.php';
 require get_template_directory() . '/inc/function-social.php';
+require get_template_directory() . '/inc/function-content.php';
