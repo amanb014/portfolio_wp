@@ -11,6 +11,8 @@ function aman_add_admin_page() {
 
 	add_submenu_page( 'aman_settings_page', 'Social Links', 'Social', 'manage_options', 'social_settings_page', 'social_create_page' );
 
+	add_submenu_page( 'aman_settings_page', 'Content Settings', 'Content', 'manage_options', 'content_settings_page', 'content_settings_create_page' );
+
 
 }
 add_action('admin_menu', 'aman_add_admin_page');
@@ -22,6 +24,9 @@ function aman_create_page() {
 }
 function social_create_page() {
 	require_once(get_template_directory() . '/inc/templates/social-admin.php');
+}
+function content_settings_create_page() {
+	require_once(get_template_directory() . '/inc/templates/content-admin.php');
 }
 
 /*=========================
