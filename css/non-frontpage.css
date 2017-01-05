@@ -180,7 +180,6 @@ nav.pagination {
 
 .post-navigation {
 	display: inline;
-
 }
 
 .nav-previous, .nav-next {
@@ -215,6 +214,15 @@ nav.pagination {
 
 .nav-previous a, .nav-next a {
 	color: #e3e3e3;
+}
+
+#main-post {
+	overflow: auto;
+}
+
+.site-footer {
+	bottom: 0;
+	position: absolute;
 }
 
 /*****************************************
