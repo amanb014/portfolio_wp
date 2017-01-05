@@ -53,10 +53,13 @@ THIS INCLUDES THE BACKGROUND, IMAGE, AND NAME/TITLE
 BLOG PAGE (home.php)
 *****************************************/
 .blog-post {
-	padding: 4% 7% 4% 7%;
+	padding: 1% 7% 4% 7%;
 	background: #F4F7F7;
-	border-radius: 2vmin;
-	margin: 2% 0 2% 0;
+	border-radius: 0 0 2vmin 2vmin;
+	margin: 0 0 2% 0;
+
+	font-family: 'Helvetica', sans-serif;
+	font-size: 12pt;
 }
 
 .blog-post:hover {
@@ -86,6 +89,37 @@ BLOG PAGE (home.php)
 	font-size: 11pt;
 }
 
+/*****************************************
+PROJECT POST TYPE
+*****************************************/
+
+.project-summary {
+	margin: 10px 0 0 0;
+	text-align: center;
+	font-family: 'Arima Madurai', sans-serif;
+	font-size: 16pt;
+	color: #000;
+}
+
+.project-dates {
+	text-align: center;
+	font-family: 'Arima Madurai', sans-serif;
+	font-size: 14pt;
+	color: #000;
+
+}
+
+#blog-post-text p {
+	padding-bottom: 10px;
+}
+
+.skills-used {
+	margin-bottom: 10px;
+}
+
+/*****************************************
+POST NAVIGATION
+*****************************************/
 nav.pagination {
 	display: block;
 	position: relative;
@@ -219,17 +253,21 @@ nav.pagination {
 #main-post {
 	overflow: auto;
 }
-
-.site-footer {
-	bottom: 0;
-	position: absolute;
-}
-
 /*****************************************
 CONTENT IN THE POST/PAGE BODY
 *****************************************/
 .entry-content {
 	width: 100%;
+}
+
+#blog-post-text p {
+	margin: 10px 0 0 0;
+}
+
+h2 {
+	font-family: 'Arima Madurai', sans-serif;
+	font-size: 16pt;
+	color: #000;
 }
 
 /*****************************************
@@ -241,6 +279,14 @@ MEDIA QUERIES
 	.blog-post {
 		border-radius: 0;
 		width: 100%;
+	}
+
+	.nav-next {
+		margin-right: 10px;
+	}
+
+	.nav-previous {
+		margin-left: 10px;
 	}
 
 }

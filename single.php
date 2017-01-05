@@ -24,8 +24,8 @@
 				// Previous/next post navigation.
 				the_post_navigation( array(
 					'type' => 'list',
-					'next_text' => 'Next Post',
-					'prev_text' => 'Previous Post'
+					'next_text' => 'Next',
+					'prev_text' => 'Previous'
 				) );
 
 			// End the loop.
