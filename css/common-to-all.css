@@ -77,6 +77,10 @@ WRAPPERS BASED ON PERCENTAGE
 .max800 {
 	max-width: 800px;
 }
+.max1000 {
+	max-width: 1000px;
+}
+
 
 /*****************************************
 NAVIGATION MENU

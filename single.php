@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php get_header(); ?>
 
 <div class="wrapper80 max800">
 	<div id="primary" class="content-area">
