@@ -3,6 +3,10 @@ body {
 	background-color: #C4DFE6;
 }
 
+a {
+	text-decoration: underline;
+}
+
 /*****************************************
 TOP NAVIGATION
 *****************************************/
@@ -13,6 +17,7 @@ TOP NAVIGATION
 	background: rgba(0,23,27,0.7);
 	position: fixed;
 	z-index: 1;
+	text-decoration: none;
 }
 
 #logo {
@@ -98,7 +103,7 @@ NAVIGATION MENU
 	color: #fff;
 	font-size: 3vmax;
 	padding: 8px 0 8px 5vmin;
-	
+	text-decoration: none;
 }
 
 
@@ -110,7 +115,7 @@ FOOTER CSS
 	min-height: 15vh;
 	background-color: #003b46;
 	width: 100%;
-	margin-top: 75px;
+	margin-top: 100px;
 }
 
 .footer-flex-container {
@@ -156,12 +161,6 @@ CONTENT IN THE POST/PAGE
 .entry-header {
 	display: none; !important
 }
-
-.wrap {
-	width: 100%;
-	margin: 10px auto;
-}
-
 .emphasize {
 	text-transform: uppercase;
 	font-family: 'Arima Madurai', sans-serif;

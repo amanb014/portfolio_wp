@@ -15,7 +15,11 @@ endif;
 
 				if(is_front_page()) {
 					get_template_part( 'contents/content', 'frontpage' );
-				} else {
+				}
+				elseif(is_page('portfolio')) {
+					get_template_part( 'contents/content', 'portfolio' );
+				}
+				else {
 					get_template_part('contents/content', 'page');
 				}
 				

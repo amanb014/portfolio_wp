@@ -43,7 +43,7 @@
 
 	<p class="blog-post-meta"></p>
 
-	<p class="projects-link"><a href="<?php echo esc_attr(get_option('projects_link'));?>"><<- View All Projects</a></p>
+	<p class="projects-link"><a href="<?php echo esc_attr(get_option('projects_link'));?>"> <<- View All Projects</a></p>
 
 </div>
 
