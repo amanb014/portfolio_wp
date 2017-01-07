@@ -9,8 +9,8 @@
 	?> - 
 
 	<?php
-		$start_date = new DateTime(get_post_meta(get_the_ID(), 'end_date', true));
-		echo $start_date->format('F Y');
+		$end_date = new DateTime(get_post_meta(get_the_ID(), 'end_date', true));
+		echo $end_date->format('F Y');
 
 	?>
 

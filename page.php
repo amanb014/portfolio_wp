@@ -18,6 +18,9 @@ endif;
 				}
 				elseif(is_page('portfolio')) {
 					get_template_part( 'contents/content', 'portfolio' );
+				} 
+				elseif(is_page('work-experience')) {
+					get_template_part( 'contents/content', 'portfolio' );
 				}
 				else {
 					get_template_part('contents/content', 'page');
